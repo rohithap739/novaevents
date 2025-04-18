@@ -1,0 +1,237 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(to right, #ffe4e1, #ffccf9);
+    color: #333;
+    padding: 1rem;
+    overflow-x: hidden;
+  }
+  
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #ff69b4;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    z-index: 1000;
+  }
+  .nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    transform: scale(1.1);
+  }
+  
+  .header {
+    text-align: center;
+    padding: 100px;
+    animation: popIn 1s ease-in-out;
+  }
+  
+  .header h1 {
+    font-size: 3rem;
+    color: #d6336c;
+    animation: bounce 1.5s infinite;
+  }
+  
+  .header p {
+    font-size: 1.5rem;
+    color: #555;
+  }
+  
+  section {
+    margin: 2rem auto;
+    max-width: 1000px;
+    text-align: center;
+    background: #fff0f5;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  }
+  
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .gallery img {
+    width: 250px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: transform 0.4s ease;
+    border: 3px dashed #ff69b4;
+  }
+  
+  .gallery img:hover {
+    transform: scale(1.05);
+  }
+  
+  .offers ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+  }
+  
+  .offers li {
+    margin: 10px 0;
+    font-size: 1.2rem;
+  }
+  
+  .theme-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin-top: 1rem;
+  }
+  
+  .theme {
+    background: #f3c4fb;
+    padding: 1rem;
+    border-radius: 12px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .theme:hover {
+    transform: translateY(-5px);
+    background: #ffd6f6;
+  }
+  
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 12px;
+    border: 2px solid #ff69b4;
+    border-radius: 10px;
+    font-size: 1rem;
+    background: #fff;
+  }
+  
+  .contact-form button {
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background-color: #ff1493;
+  }
+  
+  .footer {
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    background-color: #ffc0cb;
+    border-radius: 15px;
+    font-size: 1rem;
+  }
+  
+  /* Animations */
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+  
+  @keyframes popIn {
+    0% { opacity: 0; transform: scale(0.8); }
+    100% { opacity: 1; transform: scale(1); }
+  }
+  
+  .fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeIn 1s forwards;
+  }
+  
+  .delay-1 { animation-delay: 0.3s; }
+  .delay-2 { animation-delay: 0.6s; }
+  .delay-3 { animation-delay: 0.9s; }
+  .delay-4 { animation-delay: 1.2s; }
+  .delay-5 { animation-delay: 1.5s; }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .call-button {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 40px;
+    padding: 12px 20px;
+    background-color: transparent;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+    animation: jump 0.6s ease-in-out infinite;
+  }
+  
+  @keyframes jump {
+    0%   { transform: translateY(0); }
+    30%  { transform: translateY(-10px); }
+    50%  { transform: translateY(0); }
+    70%  { transform: translateY(-5px); }
+    100% { transform: translateY(0); }
+  }
+  
+  
+  .insta{
+    width: 40px;
+    display: flex;
+    animation: jump 0.6s ease-in-out infinite;
+  }
+
+  .phone{
+    width: 40px;
+    display: flex;
+    animation: jump 0.6s ease-in-out infinite;
+  }

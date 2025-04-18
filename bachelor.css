@@ -1,0 +1,204 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #0f0f1a;
+    color: #fff;
+    overflow-x: hidden;
+  }
+  
+  .background-sparks::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: url('sparks.gif') center/cover no-repeat;
+    opacity: 0.1;
+    z-index: -1;
+  }
+
+  .nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #4b2e83;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav-links a {
+    color: #4b2e83;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #ff6b81;
+  }
+  
+  .intro {
+    text-align: center;
+    padding: 5rem 2rem;
+    background: linear-gradient(135deg, #ff0080, #7928ca);
+    animation: glow 3s infinite alternate;
+  }
+  
+  .intro h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .carousel {
+    overflow: hidden;
+    padding: 2rem 0;
+  }
+  
+  .carousel-track {
+    display: flex;
+    animation: slide 10s linear infinite;
+  }
+  
+  .carousel-track img {
+    width: 100vw;
+    height: 300px;
+    padding-left: 20PX;
+    object-fit: cover;
+  }
+  
+  .packages {
+    text-align: center;
+    padding: 3rem 1rem;
+    background: #1e1e2f;
+  }
+  
+  .card-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .glass-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    padding: 2rem;
+    width: 250px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 20px #ff0080;
+    transition: transform 0.3s ease;
+  }
+  
+  .glass-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .interactive {
+    padding: 3rem;
+    text-align: center;
+    background: #141421;
+  }
+  
+  .custom-options label {
+    display: block;
+    margin: 1rem auto;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
+  button {
+    padding: 0.8rem 2rem;
+    background: #ff0080;
+    border: none;
+    color: white;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    background: #ff4da6;
+  }
+  
+  #plan-result {
+    margin-top: 1rem;
+    font-style: italic;
+    color: #ccc;
+  }
+  
+  @keyframes glow {
+    from {
+      box-shadow: 0 0 20px #ff0080;
+    }
+    to {
+      box-shadow: 0 0 50px #ff0080;
+    }
+  }
+  
+  @keyframes slide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+  }
+      
+  
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+  .call-button {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 40px;
+    padding: 12px 20px;
+    background-color: transparent;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+    animation: jump 0.6s ease-in-out infinite;
+  }
+  
+  @keyframes jump {
+    0%   { transform: translateY(0); }
+    30%  { transform: translateY(-10px); }
+    50%  { transform: translateY(0); }
+    70%  { transform: translateY(-5px); }
+    100% { transform: translateY(0); }
+  }
+  
+  
+  .insta{
+    width: 40px;
+    display: flex;
+    animation: jump 0.6s ease-in-out infinite;
+  }
+
+  .phone{
+    width: 40px;
+    display: flex;
+    animation: jump 0.6s ease-in-out infinite;
+  }

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bachelor Bash | Nova Events</title>
+  <link rel="stylesheet" href="bachelor.css" />
+  <link rel="icon" href="images/logo.png" />
+</head>
+<body>
+  <nav class="nav-bar">
+    <div class="logo">NOVA EVENTS</div>
+    <ul class="nav-links">
+      <li><a href="index.html#home">Home</a></li>
+      <li><a href="index.html#events">Events</a></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </nav>
+
+  <div class="background-sparks"></div>
+
+  <section class="intro">
+    <h1> Bachelor Bash</h1>
+    <p>One last wild ride before the big day. Let’s make it legendary.</p>
+  </section>
+
+  <section class="carousel">
+    <div class="carousel-track">
+      <img src="images/party1.jpg" alt="Party Vibes" />
+      <img src="images/party2.jpg" alt="Party Dance" />
+      <img src="images/prty3.jpg" alt="Party Drink" />
+      <img src="images/party4.jpg" alt="Party Drink" />
+      <img src="images/party5.jpg" alt="Party Drink" />
+    </div>
+  </section>
+
+  <section class="packages">
+    <h2>🔥 Party Packages</h2>
+    <div class="card-container">
+      <div class="glass-card">
+        <h3>Neon Night</h3>
+        <p>Club entry, drinks, DJ & transportation.</p>
+      </div>
+      <div class="glass-card">
+        <h3>Beach Blowout</h3>
+        <p>Private beach, BBQ, pool party & games.</p>
+      </div>
+      <div class="glass-card">
+        <h3>Sky High</h3>
+        <p>Rooftop bar, fire shows & open bar experience.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="interactive">
+    <h2>Customize Your Night</h2>
+    <div class="custom-options">
+      <label><input type="checkbox" /> VIP Limo Ride</label>
+      <label><input type="checkbox" /> Private Bartender</label>
+      <label><input type="checkbox" /> Pool Party</label>
+      <label><input type="checkbox" /> Hangover Kit</label>
+    </div>
+    <button onclick="generatePlan()">Build My Party</button>  
+    
+    <p id="plan-result"></p>
+  </section>
+
+  <div class="button-container">
+    <a href="tel:7397797148" class="call-button"><img src="images/phone.svg" class="phone" alt=""></a>
+    <a href="https://www.instagram.com/novaeventsvibe/#"><img src="images/instagram.svg" class="insta" alt=""></a>
+  </div>
+
+  <script src="bachelor.js"></script>
+</body>
+</html>

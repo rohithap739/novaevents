@@ -1,0 +1,203 @@
+/* Reset and fonts */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    color: #222;
+    background: #fff;
+    overflow-x: hidden;
+  }
+  
+  /* Hero Section */
+  .family-hero {
+    position: relative;
+    height: 100vh;
+    background: url('family-bg.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .family-hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 10, 10, 0.4);
+    z-index: 1;
+  }
+  .hero-content {
+    z-index: 2;
+    color: #fff;
+    animation: fadeInDown 1s ease-out;
+  }
+  .hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+  }
+  .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+  .explore-btn {
+    padding: 0.8rem 2rem;
+    background: #fff;
+    color: #333;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  .explore-btn:hover {
+    background: #d4af37;
+    color: #fff;
+  }
+  
+  /* Details Section */
+  .family-details {
+    padding: 5rem 2rem;
+    background: #f9f9f9;
+    text-align: center;
+  }
+  .family-details h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #333;
+  }
+  .details-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+  .detail-card {
+    width: 300px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    padding: 1.5rem;
+    transition: transform 0.3s ease;
+  }
+  .detail-card img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  .detail-card h3 {
+    margin: 1rem 0 0.5rem;
+    color: #444;
+  }
+  .detail-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  /* Testimonials */
+  .testimonials {
+    background: linear-gradient(to right, #fffaf0, #fceabb);
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  .testimonials h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  .testimonial-box {
+    max-width: 600px;
+    margin: auto;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    font-style: italic;
+  }
+  .testimonial-box span {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+  }
+
+  button{
+    align-items: center;
+  padding: 0.8rem 2rem;
+  background: #e4dd15;
+  border: none;
+  color: white;
+  font-weight: bold;
+  margin-top: 1.5rem;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #ff4da6;
+}
+  
+  /* Footer */
+  .family-footer {
+    background: #222;
+    color: #fff;
+    padding: 1.5rem;
+    text-align: center;
+  }
+  
+  /* Animations */
+  @keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+  }
+  .fade-in.appear {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .call-button {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 40px;
+    padding: 12px 20px;
+    background-color: transparent;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+    animation: jump 0.6s ease-in-out infinite;
+  }
+  
+  @keyframes jump {
+    0%   { transform: translateY(0); }
+    30%  { transform: translateY(-10px); }
+    50%  { transform: translateY(0); }
+    70%  { transform: translateY(-5px); }
+    100% { transform: translateY(0); }
+  }
+  
+  
+  .insta{
+    width: 40px;
+    display: flex;
+    animation: jump 0.6s ease-in-out infinite;
+  }
+
+  .phone{
+    width: 40px;
+    display: flex;
+    animation: jump 0.6s ease-in-out infinite;
+  }
